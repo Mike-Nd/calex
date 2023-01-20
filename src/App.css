@@ -5,7 +5,7 @@
 }
 
 .App {
-  background-color: rgb(26, 26, 26);
+  background-color: rgb(207, 207, 207);
   min-height: 100vh;
 }
 
@@ -24,8 +24,7 @@
 }
 
 .App-header {
-  background-color: rgb(255, 174, 0);
-  border-radius:30px;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -37,13 +36,13 @@
   text-align: center;
   font-size: 1.5rem;
   color: rgb(26, 26, 26);
-  margin: 0;
+  margin: 0 0 20px;
   padding: 12px 0 12px 0;
 }
 
 .main-section {
   background-color: rgb(26, 26, 26);
-  padding: 0 0 10px;
+  padding:30px;
   width: 80%;
   min-height: 150px;
   align-items: center;
@@ -51,21 +50,22 @@
   text-align: center;
   color: white;
   overflow-wrap: break-word;
+  box-shadow: 0 0 30px 3px rgb(94, 94, 94);
 }
 
 .main-section h2 {
   font-size: 2.5rem;
   margin: 0;
   padding: 10px 0 0;
-  font-weight: 400;
+  font-weight: 400;  
 }
 
 .display-default {
   font-size: 1.5rem;
   color: rgb(184, 184, 184);
   position: relative;
-  top: 65px;
-}
+  top: 35px;
+}    
 
 .main-section h3 {
   color: rgb(184, 184, 184);
@@ -85,7 +85,7 @@
   padding: 10px;
   margin: 10px 0 0;
   border: 0;
-  background-color: rgb(255, 174, 0);
+  background-color: rgb(255, 145, 0);
   color: rgb(6, 0, 39);
 }
 
@@ -115,31 +115,32 @@
 }
 
 .extra p {
-  color: rgb(184, 184, 184);
+  color: rgb(26, 26, 26);
   margin: 0 20px 20px;
   font-size: 1rem;
 }
 
-.extra{
-  margin: 50px ;
+.extra {
+  margin: 50px;
 }
- 
+
 .extra h3 {
-  color: rgb(255, 174, 0);
+  color: rgb(255, 145, 0);
   margin: 40px 0 5px;
+}
+
+.major-input {
+  width: 70%;
+  background: rgb(26, 26, 26);
+  margin: auto;
+  padding: 20px 0 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 30px 3px rgb(94, 94, 94);
 }
 
 @media screen and (min-width: 900px) {
   .main-section {
     width: 80%;
-  }
-
-  .desktop-input {
-    width: 70%;
-    background: rgb(26, 26, 26);
-    margin: auto;
-    padding: 20px 0 20px;
-    border-radius: 25px;
   }
 
   .App {
@@ -153,30 +154,28 @@
     margin: auto;
   }
 
-  .App-header { 
+  .App-header {
     background: 0;
   }
 
   .container {
     max-width: 1024px;
     width: 40%;
-    background: rgb(255, 174, 0);
     border-radius: 30px;
     padding: 0;
     display: block;
     padding-bottom: 30px;
   }
- 
+
   .extra {
     width: 40%;
     align-self: center;
   }
 }
 
-@media screen and (min-width:570px) and (max-width:900px) {
-  .major{
+@media screen and (min-width: 570px) and (max-width: 900px) {
+  .major {
     max-width: 500px;
     margin: auto;
   }
-
 }

@@ -17,7 +17,7 @@ function App() {
     } else {
       return;
     }
-  };
+  }
 
   //clear the input spaces
   const Clear = () => {
@@ -73,7 +73,7 @@ function App() {
               )}
             </div>
           </header>
-          <section className="desktop-input">
+          <section className="major-input">
             {/* section for inputing values */}
             <section className="inputs">
               <input
