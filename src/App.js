@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import Display from "./display";
+import Display from "./components/display";
 
 function App() {
   const [pipAmount, setPipAmount] = useState("");
@@ -17,7 +17,7 @@ function App() {
     } else {
       return;
     }
-  }
+  };
 
   //clear the input spaces
   const Clear = () => {
@@ -50,8 +50,9 @@ function App() {
             In order to use the lot-size calculator, you have to know the amount
             of pips of stop loss, the standard pip value of your currency pair;
             for dollar pairs it's usually $10 but it varies for other pairs, if
-            you don't know the pipValue of your currency pair, click this link to find out. Also input the amount you're
-            willing to risk and simply click calculate.
+            you don't know the pipValue of your currency pair, click this link
+            to find out. Also input the amount you're willing to risk and simply
+            click calculate.
           </p>
         </div>
         <div className="container">
@@ -73,7 +74,7 @@ function App() {
               )}
             </div>
           </header>
-          <section className="major-input">
+          <section className="desktop-input">
             {/* section for inputing values */}
             <section className="inputs">
               <input
@@ -109,7 +110,6 @@ function App() {
             </footer>
           </section>
         </div>
-
       </div>
     </div>
   );
